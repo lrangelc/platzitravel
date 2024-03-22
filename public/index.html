@@ -14,21 +14,26 @@
     <section class="w-full h-auto">
       <div id="home">
         <div class="w-full h-3/4">
-          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+          <div
+            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-20 lg:justify-start"
+          >
             <input
-              class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12"
+              class="w-48 outline-none p-3 rounded-full shadow-sm transition-all duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
               placeholder="San Francisco"
               type="search"
               id=""
             />
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+              <p class="text-4xl ml-16 text-black">Encuentra mas ubicaciones como esta</p>
+            </div>
             <button
-              class="w-36 rounded-full text-x text-primary shadow-sm font-semibold p-4 bg-white transition duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110"
+              class="w-36 rounded-full text-x text-primary shadow-sm font-semibold p-4 bg-white transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16"
             >
               Explorar
             </button>
           </div>
-          <div class="w-full h-full">
-            <img src="./img/sanFrancisco.jpg" alt="" />
+          <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+            <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -79,9 +84,13 @@
             <p class="CardTitle">Chicago</p>
             <p class="text-sm pl-8 text-red mr-24">2 habitaciones, baño y cocina</p>
           </div>
-          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
-            <p class="CardTitle">Chicago</p>
-            <p class="text-sm pl-8 text-red mr-24">2 habitaciones, baño y cocina</p>
+          <div class="w-full h-96 bg-bali bg-cover rounded-xl">
+            <p class="CardTitle">Bali</p>
+            <p class="text-sm pl-8 text-white mr-24">2 habitaciones, 2 baños y piscina privada</p>
+          </div>
+          <div class="w-full h-96 bg-LA bg-cover rounded-xl">
+            <p class="CardTitle">Los Angeles</p>
+            <p class="text-sm pl-8 text-white mr-24">2 habitaciones, baño y cocina</p>
           </div>
         </div>
       </div>
@@ -107,7 +116,7 @@
       <p class="text-sm text-gray-300">Terminos y Condiciones</p>
       <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
     </footer>
-    <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center" id="tab_bar">
+    <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden" id="tab_bar">
       <a href="#home">
         <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
